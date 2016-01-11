@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>UAS MOBILE LEARNING </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="jquery-1.6.4.js"></script>
+        <script src="jquery.mobile-1.1.0.js"></script>
+        <link href="jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+		<style type="text/css">
+.chkans {
+margin:10px 10px -5px 0;
+}
+
+span.chkans {
+position:relative;
+top:5px
+}
+
+* html span.chkans {
+top:2px
+}
+</style>
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1" data-theme="e" style="background-image:url('images/bg.png'); background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%;" >
+            <div data-role="header" data-position="fixed" data-theme="e">
+                <h1>ASSIGNMENT</h1>
+            </div>
+            <div data-role="content"></div>
+			<h2><marquee scrollamount="12"><font color="23093678917">Tutorial Assignment</marquee></font></h2>
+				<center><img src="images/cover1.png"></img></center>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page7" data-icon="info">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page2" style="background-image:url('images/bg.png'); background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e">
+            <div data-role="header" data-position="fixed" data-theme="e">
+                <h1>MENU</h1>
+				<marquee scrollamount="10"> <font color="76120">Selamat Belajar Semoga Sukses !!! Jangan Lupa Berdoa </font> </marquee>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" data-theme="e" data-divider-theme="b"
+                data-filter="true" data-filter-placeholder="Cari">
+                    <li>
+                        <a href="#page3"><img src="images/pendahuluan.png" height="100" width="100" class="ui-li-thumb"><font color="101093">MATERI</font></a>
+                    </li>
+                    <li>
+                        <a href="#page4"><img src="images/kb1.png" height="100" width="100" class="ui-li-thumb"><font color="101093">DESKRIPSI</font></a>
+                    </li>
+                    <li>
+                        <a href="#page5"><img src="images/kb3.png" height="100" width="100" class="ui-li-thumb"><font color="101093">CARA MEMBUAT</font></a>
+                    </li>
+                    <li>
+                        <a href="#page8"><img src="images/video.png" height="100" width="100" class="ui-li-thumb"><font color="101093">VIDEO TUTORIAL</font></a>
+                    </li>
+                    <li>
+                        <a href="#page6"><img src="images/latihan (2).png" height="100" width="100" class="ui-li-thumb"><font color="101093">LATIHAN</font></a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page7" data-icon="info">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page3" style="background-image:url('images/bg.png'); background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%;"data-theme="e">
+            <div data-role="header" data-position="fixed" data-theme="e">
+                <h1>PENDAHULUAN</h1>
+                <a data-role="button" href="#page2" data-icon="arrow-l">Back</a>
+            </div>
+            <div data-role="content">
+                <br>
+				<br></br></br>
+                
+				<h2>Tujuan Pembelajaran :</h2>
+                <p>Peserta dapat menjelaskan bagaimana cara menggunakan <i>"ASSIGNMENT" </i>di moodle</p>
+                <h5>Kegiatan Belajar  : Tutorial membuat assignment</h5>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page7" data-icon="info">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page4" data-theme="e" style="background-image:url('images/bg1.png'); background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+            <div data-role="header" data-position="fixed" data-theme="e">
+                <h1>PENGERTIAN</h1>
+                <a data-role="button" href="#page2" data-icon="arrow-l">Back</a>
+            </div>
+            <div data-role="content">
+			<font size="+1">
+				<ul>
+					<li> MOODLE <i>(Modular Object-Oriented Dynamic Learning Environment)</i> adalah paket perangkat lunak yang di produksi untuk 
+				kegiatan belajar berbasis internet dan situs web yang menggunakan prinsip <i>Social Constructionist pedagogy</i> </li><br></br>
+				
+					<li> MOODLE merupakan salah satu aplikasi dari konsep dan mekanisme belajar mengajar yang memanfaatkan teknologi informasi,
+				yang dikenal dengan konsep pembelajaran elektronik atau e-learning.</li><br></br>
+				
+					<li> MOODLE dapat digunakan secara bebas sebagai produk sumber terbuka <i>(open source)</i> di bawah lisensi GNU.</li><br></br>
+					
+					<li> MOODLE dapat diinstal komputer dan sistem operasi apapun yang bisa menjalankan PHP dan mendukung database SQL.</li><br></br>
+					
+					<li> MOODLE memiliki fitur unggulan salah satunya adalah <b>"Assignment"</b></li><br></br>
+					
+					<li> Assignment digunakan untuk menangani tugas mahasiswa secara online. Uraian tugas, cara pengumpulan (submission), deadline, dan penilaian tugas</li><br></br>
+				</ul>
+			</font>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page7" data-icon="info">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page5" data-theme="e" >
+            <div data-role="header" data-position="fixed" data-theme="e">
+                <h1>ASSIGNMENT</h1>
+                <a data-role="button" href="#page2" data-icon="back">Back</a>
+            </div>
+            <div data-role="content">
+                <h2>Langkah - Langkah Pembuatan Assignment :</h2>
+                <p>Dengan memilih <img src="images/a.png" /> dilanjutkan denga klik <img src="images/b.png">akan terlihat pilihan komponen seperti berikut :<br>
+				<img src="images/c1.png"><br></br>
+				<h3><font color="19875"> GENERAL </font></h3><br>
+				Digunakan untuk menentukan judul tugas serta deskripsinya dari tugas tersebut melalui text box dan text:<br>
+				<img src="images/c.png"><br></br>
+				<h3><font color="19875"> AVAILIBITY</font> </h3><br>
+				Digunakan untuk menentukan kapan tugas harus dikumpulkan yang memuat batas awal dan akhir pengumpulan. 
+				Waktu dinyatakan dalam tanggal, bulan, tahun, dan jam. Jika <i>"Enable"</i> tidak dicentang, maka pengaturan waktu tidak berlaku, 
+				artinya tugas dapat dikumpulkan sewaktu-waktu <br>
+				<img src="images/d.png"><br></br>
+				<h3><font color="19875"> SUBMISSION TYPES</font> </h3><br>
+				Digunakan untuk menentukan cara pengumpulan tugas yaitu: Online text, File submission, atau Submission comments. 
+				Jumlah file yang bisa diunggah serta batas maximum ukuran file juga diatur disini <br>
+				<img src="images/e.png"><br></br> <ul><li>Online text agar mahasiswa menuliskan tugasnya langsung dalam text editor yang disedikan secara online.</li>
+				<li>File submission, mengharuskan mahasiswa mengunggah satu atau lebih file sebagai hasil penyelesaian tugasnya. </li>
+				<li>Submission comment memungkinkan mahasiswa meninggalkan komentar atas tugasnya.</li> </ul>
+				<h3><font color="19875"> FEEDBACK TYPES </font></h3><br>
+				Digunakan untuk menentukan tipe umpan balik dari dosen yang meliputi :<br>
+				<ul><li>Feedback comments, dipilih jika dosen akan memberikan komentar umpan balik ke setiap tugas yang dikumpulkan mahasiswa.</li>
+				<li>Offline grading worksheet memungkinkan dosen untuk mengunduh dan mengunggah worksheet untuk menilai tugas mahasiswa. </li>
+				<li>Feedback files digunakan dosen untuk mengunggah file sebagai umpan balik untuk menilai tugas</li> </ul>
+				<img src="images/f.png"><br></br>
+				<h3><font color="19875"> SUBMISSION SETTINGS </font></h3><br>
+				Berisi pengaturan Jika "Require students click submit button" dipilih "Yes" maka mahasiswa harus meng-klik tombol "Submit" sebagai tanda pengumpulan tugas final.<br>
+				Ini memungkinkan mahasiswa menyimpan versi draft tugasnya dalam sistem yang dapat diperbaiki sebelum dikumpulkan. Jika dipilih "No" pengumpulan tugas dianggap sudah final. 
+				"Require that students accept the submission statement" mengharuskan mahasiswa menerima pernyataan pengumpulan tugasnya.<br>
+				"Attempts reopened" adalah pengaturan untuk menentukan apakah mahasiswa dapat membuka kembali tugas yang telah dikumpulkan. Yaitu dengan 3 cara :
+				<ul><li>Never - tidak dapat membuka kembali.</li>
+				<li>Manually - dapat dibuka kembali oleh dosen.</li>
+				<li>Automatically until pass - Tugas yang sudah dikumpulkan secara otomatis terbuka kembali sampai mahasiswa mendapat nilai lulus sesuai 
+				setting di Gradebook di tugas ini. </li> </ul>
+				<img src="images/g.png"><br></br>
+				<h3><font color="19875"> GROUP SUBMISSION SETTINGS </font></h3><br>
+				Digunakan untuk mengatur pengumpulan tugas kelompok. Jika "Students submit in groups" dipilih "Yes" maka mahasiswa peserta kelas dibagi menjadi
+				beberapa kelompok. Tugas kelompok akan dishare ke seluruh anggota dimana mereka akan bisa saling melihat perubahan dari jawaban tugasnya.<br>
+				Jika "Require all group members submit" dipilih, seluruh anggota kelompok harus mengklik tombol "Submit" sebelum tugas kelompok dikumpulkan.
+				Jika tidak dipilih, tugas kelompok dianggap sudah terkumpul jika salah satu dari anggota mengklik tombol "submit".<br>
+				<img src="images/h.png"><br></br>
+				<h3><font color="19875"> NOTIFICATIONS </font></h3><br>
+				Digunakan untuk mengatur pemberitahuan kepada dosen tentang pengumpulan tugasnya. Jika "Notify graders about submissions" diaktifkan,
+				dosen menerima pesan setiap kali mahasiswa mengumpulkan tugasnya, apakah tepat waktu atau terlambat.
+				Metode pesan dapat dikonfigurasikan. Jika "Notify graders about late submissions" diaktifkan,
+				dosen menerima pesan setiap ada mahasiswa yang terlambat menyerahkan tugasnya.<br>
+				<img src="images/i.png"><br></br>
+				<h3><font color="19875"> GRADE </font></h3><br>
+				Pengaturan tentang metode penilaian<br>
+				<img src="images/j.png"><br></br>
+				Setelah selesai semua klik save and display<br></br>
+				<img src="images/k.png"><br></br>
+				Selanjutnya di halaman siswa akan  muncul tampilan seperti di bawah ini dan siswa dapat melakukan upload file tugas yang telah dikerjakan<br></br>
+				<img src="images/l.png"><br></br>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page7" data-icon="info">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page6" data-theme="e" style="background-image:url('images/bg.png'); background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+            <div data-role="header" data-position="fixed" data-theme="e">
+                <h1>LATIHAN SOAL</h1>
+				<a data-role="button" href="#page2" data-icon="arrow-l">Back</a>
+            </div>
+            <div data-role="content">
+			<h1>Latihan Soal</h1> <br>
+<h2>Pilihlah Jawaban Yang Benar</h2>
+<br><br>
+
+<script type="text/javascript">
+/*/////////////////////////////
+* Quiz Writing & Scoring Script
+* © 2005 John Davenport Scheuer
+* jscheuer1TAKEOUTCAPSFOREMAIL@comcast.net
+* permission to use granted
+* this credit must stay intact
+/////////////////////////////*/
+
+//Set to 0 for no answers given away
+//Set to 1 to allow peeking
+var allowPeeking=1
+
+//Set to 0 for no Starting Over without refresh
+//Set to 1 to allow Easy Do Overs
+var allowDoOvers=1
+
+questions=new Array();
+//Set Questions and Answers Arrays Below.
+//Questions come first. Then come the answer pairs:
+//Follow the right answer with "right", all wrong ones with ""
+questions[0]=["Apa yang dimaksud dengan MOODLE?", "Bahasa pemrograman", "", "perangkat lunak yang di produksi untuk kegiatan belajar", "right", "Aplikasi untuk menyimpan data", "", "Watermark", ""]
+questions[1]=["Apa kepanjangan dari MOODLE?", "Melt Object Oriented List Education", "", "Monitor Object Oriented List Education", "", "Modular Object-Oriented Dynamic Learning Environment", "right", "Mecanic Object-Oriented Digital Learning Education", ""]
+questions[2]=["Apa saja fitur yang dimiliki oleh MOODDLE, kecuali ?", "Lesson", "", "Glossary", "", "Assignment", "", "Field", "right"]
+questions[3]=["Apa fungsi dari Assignment?", "Untuk membuat kamus", "", "Untuk membuat soal multiple choice", "", "Untuk menangani tugas mahasiswa secara online ", "right", "Untuk menyimpan biodata mahasiswa", ""]
+questions[4]=["Apa yang dimaksud dengan Availibility dalam komponen Assignment?", "Untuk memberi nilai kepada mahasiswa", "", "Untuk menentukan kapan tugas harus di kumpulkan yang memnuat batas awal dan akhir pengumpulan tugas", "right", "Untuk menambahkan gambar", "", "Untuk menambahkan video", ""]
+questions[5]=["Apa saja metode dalam Submission Types, kecuali?", "Online Text", "", "File Submission", "", "File Text", "right", "Submission Comments ", ""]
+questions[6]=["Apa fungsi dari Grade ?","Metode untuk penilaian tugas", "right", "Metode untuk pengumpulan tugas", "", "Metode untuk pengujian", "", "Metode untuk membuat", ""]
+
+////////////////Stop Editing///////////////
+
+for (i = 0; i < questions.length; i++){
+for (j = 0; j < questions[i].length; j++){
+if (questions[i][j]=="")
+questions[i][j]=("w"+i)+j
+if (questions[i][j]=="right")
+questions[i][j]="right"+i
+}
+}
+var ie=document.all
+function showAnswer(el,ans){
+ie? ie[el].innerHTML='The correct answer is: '+ ans : document.getElementById(el).innerHTML='The answer is: '+ ans
+}
+
+function addup() {
+var q, right, statement, total=0
+quizQuests=new Array();
+
+for (i = 0; i < questions.length; i++)
+quizQuests[i]=0
+if (document.forms.quiz.q0['right0']){
+for (i = 0; i < questions.length; i++){
+q="q"+i
+right="right"+i
+if (document.forms.quiz[q][right].checked)
+quizQuests[i]=1
+}
+}
+else if (document.getElementById){
+for (i = 0; i < questions.length; i++){
+right="right"+i
+if (document.getElementById(right).checked)
+quizQuests[i]=1
+}
+}
+else
+return;
+for (i = 0; i < questions.length; i++)
+total += quizQuests[i]
+/*/////////////////////////////////////////////////
+Set score response below.
+///////////////////Edit Below to Suit/////////////*/
+statement='You scored '+ total +' out of '+ questions.length +' correct, '+ Math.round(total/questions.length*100) +'%'
+/////////////////Stop Editing///////////////////
+ie? ie.results.innerHTML=statement : document.getElementById('results').innerHTML=statement
+}
+function clearR(){
+ie? ie.results.innerHTML='' : document.getElementById('results').innerHTML=''
+for (i = 0; i < questions.length; i++)
+if (allowPeeking)
+ie? ie["ans"+i].innerHTML='' : document.getElementById("ans"+i).innerHTML=''
+window.scrollTo(0,0);
+}
+document.write('<hr><form name="quiz">')
+var correct, answersString
+for (i = 0; i < questions.length; i++){
+answersString=''
+for (k = 1; k < questions[i].length; k+=2)
+answersString+='<input id="'+questions[i][(k+1)]+'" type="radio" unchecked name="q'+i+'"><label for="'+questions[i][(k+1)]+'">'+questions[i][k]+'</label><br>'
+for (j = 0; j < questions[i].length; j++){
+if (questions[i][j]=="right"+i)
+correct=questions[i][j-1]
+}
+with (document){
+write('Pertanyaan '+(i+1)+':<br>')
+write(questions[i][0]+'<br>')
+write(answersString)
+if (allowPeeking)
+write('<input class="chkans" type="button" value="Cek Jawaban" onclick="showAnswer(\'ans'+i+'\',\''+correct+'\')">&nbsp;<span id="ans'+i+'" class="chkans"></span><br>&nbsp;')
+write('<br>')
+}
+}
+with (document){
+write('<hr><br>')
+write('<input type="button" value="Cek Score" onclick="addup()">&nbsp;&nbsp;<span id="results"></span><br>&nbsp;<br>')
+if (allowDoOvers)
+write('<input type="button" value="Coba Lagi" onclick="reset();clearR()">')
+write('</form>')
+}
+</script></div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page7" data-transition="slideup" data-icon="info">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="dialog" id="page7">
+            <div data-role="header" data-position="fixed">
+                <h1>About Us</h1>
+            </div>
+            <div data-role="content">
+                <strong><marquee>Terima Kasih Telah Membaca Modul Ini. Semoga Sukses &nbsp; &nbsp; &nbsp; </marquee></strong>&nbsp; &nbsp; &nbsp;
+				<br>
+				<h2> <center> <font color="78653"> Profil Penulis </center> </font> </h2> <br>
+				<table border="0">
+					<tr>
+						<th> Nama </th>
+						<th> : </th>
+						<th> Agnes Resama Robby </th>
+					</tr>
+					<tr>
+						<th> NIM </th>
+						<th> : </th>
+						<th> 1112004 </th>
+					</tr>
+					<tr>
+						<th> Tempat, Tanggal Lahir </th>
+						<th> : </th>
+						<th> Malang, 27 Mei 1994 </th>
+					</tr>
+					<tr>
+						<th> Alamat </th>
+						<th> : </th>
+						<th> Jl. Raya Karangjuwet No : 5 RT:35 RW:09 </th>
+					</tr>
+					<tr>
+						<th> Email </th>
+						<th> : </th>
+						<th> agnesresamarobby@yahoo.com </th>
+					</tr>	
+				</table>
+				<br></br>
+				<img src="images/DSC00530.JPG" width="200"
+                height="200" style="display: block; margin: 0 auto" />
+            </div>
+        </div>
+        <div data-role="page" id="page8" data-theme="e" style="background-image:url('images/bg3.png'); background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+            <div data-role="header" data-position="fixed" data-theme="e">
+                <h1>Video Tutorial</h1>
+                <a data-role="button" href="#page2" data-icon="back">Back</a>
+            </div>
+            <div data-role="content">
+                <iframe width="854" height="480" src="https://www.youtube.com/embed/fIkQDg5ohBI" frameborder="0" allowfullscreen>
+				</iframe>
+				<
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" data-icon="info">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
